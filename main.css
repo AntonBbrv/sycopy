@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'Magistral';
+    src: local('Magistral'),  format('woff')
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro'), format('woff')
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration:none;
+}
+
+.header {
+    background: #ffffff;
+}
+
+/* Верхнее меню */
+
+.fix {
+    border-top: 3px solid #f93b01;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 5;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: #333435;
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.navig {
+    position: relative;
+    padding: 0px 5px 0px 5px;
+}
+
+.menu_items:hover {
+    color: #f93b01;
+    transition: all .3s;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    bottom: 0%;
+}
+
+.compar {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 23%;
+}
+
+.search {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 28%;
+}
+
+.separator_1 {
+    height: 3px;
+    border-radius: 2px;
+    width: 3px;
+    background-color: #333435;
+    position: absolute;
+    left: 168px;
+    top: 38px;
+}
+
+.separator_2 {
+    height: 3px;
+    width: 3px;
+    border-radius: 2px;
+    background-color: #333435;
+    position: absolute;
+    right: 452px;
+    top: 38px;
+}
+
+.separator_3 {
+    height: 3px;
+    width: 3px;
+    border-radius: 2px;
+    background-color: #333435;
+    position: absolute;
+    right: 244px;
+    top: 38px;
+}
+
+.menu {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.menu_left_top {
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.menu_rigth {
+    text-align: end;
+    float: right;
+}
+
+.menu_rigt_top {
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+.menu_items {
+    padding: 10px;
+}
+
+/* Баннер кнопки на баннере */
+
+.banner_main {
+    position: relative;
+    padding-top: 20px;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 530px;
+    background-image: linear-gradient(to top, black 0%, 5%, transparent 100%);
+}
+
+.banner_main_img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    border-bottom: 3px solid #f93b01;
+    
+}
+
+.banner_button {
+    position: absolute;
+    left: 28%;
+    top: 79%;
+    font-family: 'Gotham Pro';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.banner_button_sale_charter {
+    margin: 20px;
+    padding: 25px 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fafafa;
+    border-top: 1px solid  #fafafa;
+    border-left: 4px solid #f93b01;
+    border-right: 4px solid #f93b01;
+    width: 180px;
+    display: inline-block;
+}
+
+.banner_button_sale_charter a {
+    color: #fff;
+}
+
+@media (max-width: 950px) {
+    .banner_button {
+        top: 60%;
+    }
+}
+
+.shell_separator {
+    width: 35px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* Заголовок блока спец предложений */
+.headline_main {
+    font-size: 36px;
+    color: #333435;
+    font-family: 'Magistral';
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+/* Блок специальных предложений */
+.spec_offer {
+    background: #f5f5f5;
+    padding-bottom: 60px
+}
+
+.spec_colom {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+.img_tile_img {
+    max-width: 100%;    
+}
+
+/* Карточки яхты в слайдере спец предложений */
+.yachts_spec_slider {
+    background: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    width: 380px;
+    text-align: center;
+}
+
+.yachts_spec_slider:hover {
+    box-shadow: 0px 0px 10px 3px #dfdfdf;
+    transition: .3s;
+}
+
+/* Имя яхты в плитке */
+.yacht_name_tile {
+    font-family: 'Gotham Pro';
+    font-size: 26px;
+    color: #f93b01;
+    font-weight: 500;
+}
+
+.yacht_name_tile:hover {
+    color: #c53204;
+    transition: all .3s
+}
+
+/* Характеристики в плитке */
+.specific_tile {
+    font-size: 16px;
+    font-family: 'Gotham Pro';
+    font-weight: 300;
+}
+
+/* Цена в слайдере */
+.price_tile {
+    padding: 10px;
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    color: #333435;
+    font-size: 24px;
+    margin: 0;
+}
+
+.price_border {
+    margin: auto;
+    width: 350px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    margin-bottom: 30px;
+}
+
+/* Кнопки снизу */
+.button_tile_more {
+    font-size: 14px;
+    padding-right: 80px;
+    font-weight: 500;
+    font-family: 'Gotham Pro';
+    color: #333435;
+}
+
+.button_tile_comp {
+    font-size: 14px;
+    padding-left: 80px;
+    font-weight: 500;
+    font-family: 'Gotham Pro';
+    color: #333435;
+}
+
+.button_tile_more:hover {
+    color: #f93b01;
+    transition: all .3s;
+} 
+
+.button_tile_comp:hover {
+    color: #f93b01;
+    transition: all .3s;
+}
+
+.about {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.cities_title {
+text-align: center;
+}
+
+.cities {
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    color: #f93b01;
+    display: inline-block;
+    padding: 10px 15px 0px 15px;
+}
+
+.about_text {
+    text-align: center;
+    font-family: 'Gotham Pro';
+    font-size: 15px;
+    color: #333435;
+    font-weight: 300;
+    margin: 0px 200px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+.button_more {
+    margin: auto;
+    padding: 25px 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #dadbdc;
+    border-top: 1px solid  #dadbdc;
+    border-left: 4px solid #f93b01;
+    border-right: 4px solid #f93b01;
+    width: 180px;
+    margin-bottom: 70px;
+}
+
+.button_more_txt {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 14px;
+    color: #333435;
+}
+
+.separator_4 {
+    height: 3px;
+    border-radius: 2px;
+    width: 3px;
+    background-color: #f93b01;
+    position: absolute;
+    left: 703px;
+    top: 94px;
+}
+
+.separator_5 {
+    height: 3px;
+    border-radius: 2px;
+    width: 3px;
+    background-color: #f93b01;
+    position: absolute;
+    left: 812px;
+    top: 94px;
+}
+
+.events {
+    background-color: #f5f5f5;
+    padding-bottom: 70px;
+    border-bottom: 4px solid #f93b01;
+}
+
+.events_colom {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.events_slider {
+    position: relative;
+    background-color: #fff;
+    width: 420px;
+    height: 600px;
+    margin-top: 30px;
+    /* margin-left: 100px; */
+    text-align: center;
+}
+
+.events_tile_img {
+    margin: 10px 10px 10px 10px;
+    width: 400px;
+}
+
+.events_top_head {
+    margin: 20px 0px;
+}
+
+.separator_6 {
+    height: 3px;
+    border-radius: 2px;
+    width: 3px;
+    background-color: #f93b01;
+    position: absolute;
+    left: 229px;
+    top: 314px;
+}
+
+.events_n_d_brd {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.events_name_tile {
+    font-family: 'Magistral';
+    color: #333435;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.events_description {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 25px;
+    color: #333435;
+    line-height: 25px;
+}
+
+.events_button_brd_1 {
+    border-top: 1px solid #dadbdc;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    top: 540px; left: 0; bottom: 0; right: 0;
+    /* margin-top: 100px; */
+}
+
+.events_button_more {
+    font-family: 'Gotham Pro';
+    font-size: 16px;
+    font-weight: 500;
+    color: #f93b01;
+    display: block;
+    margin-top: 1px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+
+.events_button_all {
+    margin: auto;
+    padding: 25px 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #dadbdc;
+    border-top: 1px solid  #dadbdc;
+    border-left: 4px solid #f93b01;
+    border-right: 4px solid #f93b01;
+    width: 180px;
+    margin-top: 70px;
+}
+
+.events_button_all_txt {
+    font-family: 'Gotham Pro';
+    font-weight: 500;
+    font-size: 14px;
+    color: #333435;
+}
